@@ -7,7 +7,7 @@
 nav {
 	background-color: #131112;
 	width: 100%;
-	height: 75px;
+	height: 65px;
 	position: fixed;
 }
 
@@ -15,8 +15,6 @@ ul > li {
 	float: left;
 	list-style: none;
 	margin: 30px 20px;
-
-
 }
 
 a {
@@ -26,10 +24,15 @@ a {
 	font-size: 16px;
 }
 
-
-#web-header {
-	height: 900px;
-	width: 100%;
+.header {
+	min-height: 800px;
+	background-color: #D8D0C1;
+	background-image: url("../images/bw-image.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+  	display: block;
+  	background-position: center;
 }
 
 h1 {
@@ -37,9 +40,9 @@ h1 {
 	margin-left: 800px;
 	margin-top: 20px;	
 	font-size: 30px;
-	position: fixed;
 	color: #F7F7FF;
 	font-family: 'Alice', serif;
+	position: fixed;
 }
 
 .clear:after{
@@ -58,13 +61,13 @@ h1 {
 	font-family: 'Abel', sans-serif;
 }
 
-p {
+.text-about > p {
 	margin: 20px;
 	font-family: 'Jaldi', sans-serif;
 }
 
 .text-about {
-	background-color: #7A818E;
+	/*background-color: #7A818E;*/
 	border-radius: 75px;
 	border: 2px double white;
 	margin-top: 20px;
@@ -77,4 +80,90 @@ p {
 	margin-right: 10px;
 	float: left;
 	margin-bottom: 10px;
+}
+
+.form {
+	min-height: 100px;
+	background-color: #C9B5A9;
+	padding: 15px;
+	background-image: url("../images/bw.jpeg");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	content: "";
+  	display: block;
+}
+
+fieldset {
+	border: 5px double black;
+	padding: 20px;
+	font-weight: bolder;
+	width: 47%;
+
+}
+
+legend {
+	color: #102542;
+	font-size: 24px;
+	font-family: 'Jaldi', sans-serif;
+}
+
+label {
+	margin-top: 20px;
+	font-family: 'Abel', sans-serif;
+}
+
+input {
+	height: 25px;
+	width: 300px;
+	margin: 10px 0px;
+	font-family: 'Jaldi', sans-serif;
+	font-weight: bold;
+	font-size: 14px	;
+}
+
+textarea {
+	height: 150px;
+	width: 500px;
+	font-family: 'Jaldi', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+::placeholder{
+	font-style: italic;
+	padding: 5px;
+	font-family: 'Jaldi', sans-serif;
+}
+
+button {
+	font-family: 'Jaldi', sans-serif;
+	background-color: #303036;
+	color: #F1DEDE;
+	height: 50px;
+	width: 70px;
+	font-style: bold;
+}
+
+footer {
+	background-color: #22223B;
+	min-height: 30px;
+	width: 100%;
+
+}
+
+.copyright {
+	color: #F2E9E4;
+	font-size: 12px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+img[alt*="social"]{
+	height: 30px;
+	width: 30px;
+}
+
+img[alt*="social-facebook"] {
+	margin-left: 10px;
 }

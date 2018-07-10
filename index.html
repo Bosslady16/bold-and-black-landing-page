@@ -9,25 +9,25 @@
 
 	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Abel|Alice|Jaldi|Kreon|Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Alice|Jaldi|Kreon|Rancho|Patrick+Hand" rel="stylesheet">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon.ico">
 </head>
 <body>
 
 	<nav>
 		<ul>
-			<li><a href="#Home"> Home </a></li>
-			<li><a href="#About"> About </a></li>
-			<li><a href="#Gallery"> Gallery </a></li>
-			<li><a href="#Disclaimer"> Disclaimer </a></li>
+			<li><a href="#home"> Home </a></li>
+			<li><a href="#about"> About </a></li>
+			<li><a href="#portfolio"> Portfolio </a></li>
+			<li><a href="#contact"> Contact </a></li>
 		</ul>
 	</nav>
 
-	<header class="clear">
+	<header class="header" id="home">
 		<h1>Black and White Photography</h1>
-		<img src ="assets/images/black camera.jpeg" id="web-header">
-	</header>	
-
-	<section class="about">
+	</header>
+	
+	<section class="about" id="about">
 		<h2> About Black and White Photography <img src= "assets/images/camera-icon.png" class="icon"></h2>
 			<div class="text-about">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -49,7 +49,33 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-	</section>		
+	</section>
+<section class="form">
+	<form id="contact">
+		<fieldset>
+		<legend>Get a Quote</legend>
+		<label> Name: <input type="text" name="firstname"></label><br>
+		<label> Email: <input type="email" name="email"></label><br>
+		<label>Message:<br>
+			<textarea placeholder="Add a message here..."></textarea></label><br>
+		<button type="submit" value="Submit">Submit</button>
+		</fieldset>
+	</form>
+</section>
+
+
+<footer class="social clear">
+		<ul>
+			<li><a href="#"><img src="assets/images/fb.png" alt="social-facebook"></li>
+			<li><a href="#"><img src="assets/images/tw.png" alt="social-twitter"></li>
+			<li><a href="#"><img src="assets/images/ig.png" alt="social-instagram"></li>
+		</ul>
+		<br>
+		<br>		
+<div class="copyright">
+	<p>&copy; Copyright 2018. All rights reserved. Powered by Black and White Photography</p>
+</div>
+</footer>			
 	
 </body>
 </html>
